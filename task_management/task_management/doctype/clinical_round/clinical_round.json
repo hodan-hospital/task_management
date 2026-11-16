@@ -1,0 +1,200 @@
+{
+ "actions": [],
+ "autoname": "RND-.YYYY.-.#####",
+ "creation": "2026-11-13 09:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "round_type",
+  "status",
+  "column_break_1",
+  "round_date",
+  "round_time",
+  "lead",
+  "section_context",
+  "department",
+  "column_break_2",
+  "team",
+  "service_unit",
+  "task",
+  "section_patients",
+  "patients",
+  "section_notes",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "default": "Ward Round",
+   "fieldname": "round_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Round Type",
+   "options": "Ward Round\nConsultant Round\nPost-Operative Round\nNursing Round\nICU Round\nDischarge Planning\nMultidisciplinary Meeting\nSurgical List",
+   "reqd": 1
+  },
+  {
+   "default": "Scheduled",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Scheduled\nIn Progress\nCompleted\nCancelled"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "round_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Round Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "round_time",
+   "fieldtype": "Time",
+   "label": "Round Time"
+  },
+  {
+   "fieldname": "lead",
+   "fieldtype": "Link",
+   "label": "Round Lead",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_context",
+   "fieldtype": "Section Break",
+   "label": "Context"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "team",
+   "fieldtype": "Link",
+   "label": "Team",
+   "options": "Task Team"
+  },
+  {
+   "fieldname": "service_unit",
+   "fieldtype": "Link",
+   "label": "Ward / Unit",
+   "options": "Healthcare Service Unit"
+  },
+  {
+   "fieldname": "task",
+   "fieldtype": "Link",
+   "label": "Related Task",
+   "options": "Task"
+  },
+  {
+   "fieldname": "section_patients",
+   "fieldtype": "Section Break",
+   "label": "Patients"
+  },
+  {
+   "fieldname": "patients",
+   "fieldtype": "Table",
+   "label": "Patients",
+   "options": "Clinical Round Patient"
+  },
+  {
+   "fieldname": "section_notes",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-16 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Task Management",
+ "name": "Clinical Round",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Task Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 0,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Task User"
+  }
+ ],
+ "search_fields": "title,round_type,round_date",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title",
+ "track_changes": 1
+}

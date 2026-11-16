@@ -1,0 +1,103 @@
+{
+ "charts": [],
+ "content": "[{\"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Quality Control</b></span>\", \"col\": 12}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Quality Control Tracker\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"QC Records\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"QC Audit Log\", \"col\": 4}}, {\"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"QC Settings\", \"col\": 4}}]",
+ "creation": "2026-11-08 12:00:00.000000",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "quality",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Quality Control",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Quality Control",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "QC Records",
+   "link_count": 0,
+   "link_to": "QC Records",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "QC Audit Log",
+   "link_count": 0,
+   "link_to": "QC Audit Log",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "QC Settings",
+   "link_count": 0,
+   "link_to": "QC Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-11-08 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Quality Control",
+ "name": "Quality Control",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "restrict_to_domain": "",
+ "roles": [
+  {
+   "role": "QC User"
+  },
+  {
+   "role": "QC Manager"
+  }
+ ],
+ "sequence_id": 30.0,
+ "shortcuts": [
+  {
+   "color": "Orange",
+   "label": "Quality Control Tracker",
+   "link_to": "qc-tracker",
+   "type": "Page"
+  },
+  {
+   "color": "Blue",
+   "label": "QC Records",
+   "link_to": "QC Records",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "label": "QC Audit Log",
+   "link_to": "QC Audit Log",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "label": "QC Settings",
+   "link_to": "QC Settings",
+   "type": "DocType"
+  }
+ ],
+ "title": "Quality Control"
+}

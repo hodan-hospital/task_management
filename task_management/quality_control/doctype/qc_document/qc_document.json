@@ -1,0 +1,191 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2026-11-08 12:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "col",
+  "doc_id",
+  "doc_key",
+  "t",
+  "deleted",
+  "archived",
+  "by_user",
+  "cb_1",
+  "ref",
+  "doc_date",
+  "status",
+  "pid",
+  "area",
+  "department",
+  "summary",
+  "sb_data",
+  "data"
+ ],
+ "fields": [
+  {
+   "fieldname": "col",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Collection",
+   "read_only": 1,
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "doc_id",
+   "fieldtype": "Data",
+   "label": "Item ID",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "doc_key",
+   "fieldtype": "Data",
+   "label": "Key",
+   "read_only": 1,
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "t",
+   "fieldtype": "Int",
+   "label": "Change number",
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "deleted",
+   "fieldtype": "Check",
+   "in_standard_filter": 1,
+   "label": "Deleted",
+   "read_only": 1
+  },
+  {
+   "fieldname": "archived",
+   "fieldtype": "Check",
+   "in_standard_filter": 1,
+   "label": "Archived",
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "by_user",
+   "fieldtype": "Data",
+   "label": "Last changed by",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ref",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Ref",
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "doc_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pid",
+   "fieldtype": "Data",
+   "label": "PID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "label": "Area",
+   "read_only": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Small Text",
+   "label": "Department(s)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "summary",
+   "fieldtype": "Small Text",
+   "label": "Summary",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sb_data",
+   "fieldtype": "Section Break",
+   "label": "Data"
+  },
+  {
+   "fieldname": "data",
+   "fieldtype": "Long Text",
+   "label": "Data (JSON)",
+   "read_only": 1
+  }
+ ],
+ "in_create": 1,
+ "links": [],
+ "modified": "2026-11-08 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Quality Control",
+ "name": "QC Document",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 0,
+   "cancel": 0,
+   "create": 0,
+   "delete": 0,
+   "email": 0,
+   "export": 1,
+   "permlevel": 0,
+   "print": 0,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 0,
+   "submit": 0,
+   "write": 0
+  },
+  {
+   "amend": 0,
+   "cancel": 0,
+   "create": 0,
+   "delete": 0,
+   "email": 0,
+   "export": 1,
+   "permlevel": 0,
+   "print": 0,
+   "read": 1,
+   "report": 1,
+   "role": "QC Manager",
+   "share": 0,
+   "submit": 0,
+   "write": 0
+  }
+ ],
+ "read_only": 0,
+ "search_fields": "ref,summary,pid",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "ref",
+ "track_changes": 0
+}

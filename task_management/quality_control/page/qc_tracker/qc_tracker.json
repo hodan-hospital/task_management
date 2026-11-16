@@ -1,0 +1,30 @@
+{
+ "content": null,
+ "creation": "2026-11-08 12:00:00.000000",
+ "docstatus": 0,
+ "doctype": "Page",
+ "icon": "quality",
+ "idx": 0,
+ "modified": "2026-11-08 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Quality Control",
+ "name": "qc-tracker",
+ "owner": "Administrator",
+ "page_name": "qc-tracker",
+ "roles": [
+  {
+   "role": "QC User"
+  },
+  {
+   "role": "QC Manager"
+  },
+  {
+   "role": "System Manager"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Quality Control Tracker"
+}
